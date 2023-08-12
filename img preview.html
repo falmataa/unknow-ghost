@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        img{
+           border-radius: 1000px;
+           width: 200px;
+           margin-left: 500px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <img id="image" src="pic (1).jpg" alt="">
+    </div>
+    <input id="inImg" type="file">
+
+    <script>
+        var file = document.getElementById("inImg")
+        var img = document.getElementById("image")
+        file.addEventListener("change",(e)=>{
+            img.src = URl.createObjectURL(e.target.files[0])
+        })
+    </script>
+</body>
+</html>

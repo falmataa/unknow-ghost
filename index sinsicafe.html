@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Science cafe</title>
+
+    <link rel="stylesheet" href="incss sinsicafe.css">
+
+    <link rel="stylesheet" href="index  sincic cafe css/itc-slider.css">
+
+    <link rel="stylesheet" href="css">
+
+    <script src="jquery-min.js"></script>
+
+    <script src="cafe/script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+</head>
+<style>
+
+   /* ******* Contact ******* */
+
+#contact .form-group input, 
+#contact .form-group textarea {
+	border: 1px solid #000;
+	border-radius: 0;
+	
+	
+}
+
+#contact .form-group input:hover,
+#contact .form-group textarea:hover {
+	border-color: #ababee;
+	box-shadow: 2px 2px 2px rgba(0,0,0, .2);
+
+}
+
+#contact .contact-buttons input, 
+#contact .contact-buttons input:focus {
+	color: #fff;
+	background-color: #182c39;
+	margin: 20px auto 40px auto;
+	border-radius: 0;
+	font-weight: 500;
+	padding: 10px;
+	border: 1px solid #182c39;
+	cursor: pointer;
+}
+
+#contact .contact-buttons input:hover {
+	color: #182c39;
+	background-color: #fff;
+	
+}
+
+#contact .left-box {
+	background-color: #182c39;
+	margin: 0 20px;
+	font-size: 15px;
+	text-transform: none;
+	line-height: 1.8em;
+	font-weight: 500;
+	padding: 30px 50px;
+	color: #fff;
+}
+
+#contact .left-box .span-contact {
+	color: #ffc266;
+	font-weight: 700;
+	padding-right: 20px;
+	font-size: 17px;
+}
+
+#contact #googleMap {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.container-fluid {
+   width: 100%;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+} 
+
+@media (min-width: 768px){
+.col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+}
+@media (min-width: 576px){
+.col-sm-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+
+.form-group {
+   margin-bottom: 1rem;
+}
+
+
+.slide {
+   animation-name: slide;
+   -webkit-animation-name: slide;
+   -moz-animation-name: slide;
+   animation-duration: 1.5s;
+   -webkit-animation-duration: 1.5s;
+   -moz-animation-duration: 1.5s;
+   visibility: visible;
+}
+
+.sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   border: 0;
+}
+
+label {
+   display: inline-block;
+   margin-bottom: 0.5rem;
+}
+#contact .form-group input, #contact .form-group textarea {
+   border: 1px solid #000;
+   border-radius: 0;
+}
+.form-control {
+   display: block;
+   width: 100%;
+   padding: 0.375rem 0.75rem;
+   font-size: 1rem;
+   line-height: 1.5;
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: 0.25rem;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+button, input {
+   overflow: visible;
+}
+button, input, optgroup, select, textarea {
+   margin: 0;
+   font-family: inherit;
+   font-size: inherit;
+   line-height: inherit;
+}
+.form-group {
+   margin-bottom: 1rem;
+}
+.form-control {
+   display: block;
+   width: 100%;
+   padding: 0.375rem 0.75rem;
+   font-size: 1rem;
+   line-height: 1.5;
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: 0.25rem;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+textarea {
+   resize: none;
+}
+textarea {
+   overflow: auto;
+   resize: vertical;
+}
+button, input, optgroup, select, textarea {
+   margin: 0;
+   font-family: inherit;
+   font-size: inherit;
+   line-height: inherit;
+}
+ 
+</style>
+
+<body class="homepage os-windows loaded scrolled">
+
+   
+
+      
+
+   <script>!function(e,o){o.documentElement.className="js-enabled",navigator.appVersion.match(/windows/i)&&o.body.classList.add("os-windows");var s=function(){o.body.classList.toggle("scrolled",(void 0!==e.scrollY?e.scrollY:e.pageYOffset)>0)};e.addEventListener("scroll",s),s(),e.toggleMobileMenu=function(e){o.body.classList.toggle("show-mobile-menu",e),o.querySelector(".app-header .mobile-menu-button-wrapper").classList.toggle("close",e)},e.addEventListener("resize",function(){e.toggleMobileMenu(!1)})}(window,document);</script>
+
+   <header>   
+
+      <i class="fs fa-times" onclick="hideMenu()"></i>
+
+     <ul class="navbar" id="navLinks">
+
+         <li><a href="index sinsicafe.html">Home</a></li>
+
+         <li><a href="about.html">About</a></li>
+
+         <li><a href="services.html">Services</a></li>
+
+         <li><a href="testimonial.html">testimonial</a></li>
+
+         <li><a href="contact.html">contact</a></li>
+
+
+
+     </ul>
+
+     <i class="fs fa-bars"  onclick="showMenu()"></i>
+
+ </header>
+
+   <div class="app-layout homepage">
+
+      <div class="app-top">
+
+         <div class="app-header">
+
+            <div class="app-header-inner">
+
+               <a class="logo" href="/">
+
+               <img alt="WeMod logo" src="logo.svg">
+
+               <span>Science cafe</span>
+
+               </a>
+
+               <div class="mobile-menu-button-wrapper">
+
+               </div>
+
+               <nav class="menu">
+
+                  <ul>
+
+                  </ul>
+
+               </nav>
+
+               
+
+            </div>
+
+         </div>
+
+          <!--container-->
+
+          <div class="app-content-container">
+
+             <section class="view-homepage">
+
+               <section class="section-top">
+
+                  <div class="top-upper">
+
+                     <div class="video-wrapper" style="visibility: hidden;">
+
+                        <script>!function(){var e=window.matchMedia("(max-width: 768px)"),t=function(e)js.client,o=document.createElement("video");o.poster=e.matches?"static/images/views/homepage/postr.jpg":"static/images/views/homepage/postr.jpg",o.muted=!0,o.preload="auto",o.autoplay=!0,o.playsInline=!0,o.loop=!0;var n=document.createElement("source");n.src=t(e),n.type="video/mp4",o.appendChild(n),document.currentScript.parentElement.appendChild(o),e.matches&&e.addEventListener("change",function(e){o.poster="";var a=o.currentTime;n.src=t(e),o.load(),o.currentTime=a},{once:!0})}();</script><video poster="static/images/views/homepage/postr.jpg" preload="auto" autoplay="autoplay" loop=""><source src="assets/background.mp4" type="video/mp4"></video>
+
+                        <noscript>
+
+                           <video muted="" preload="" autoplay="" playsinline="" loop="">
+
+                              <source src="pic/trading.mp4 " type="video/mp4">
+
+                           </video>
+
+                        </noscript>
+
+                     </div>
+
+                     <div class="homepage-section-wrapper">
+
+                        <div class="top-content">
+
+                           <div class="info">
+
+                              <div class="before-download"> 
+
+                                 <h1 class="title">
+
+                                    Welcome to <br> Science Cafe
+                                    <p>Science Cafe is a community forum for individuals interested in exploring the latest scientific discoveries and technologies. We hold regular events that feature expert panelists discussing a variety of topics, from education stuff  to learning programming to artificial intelligence.</p>
+                                 </h1>
+
+                               
+
+                                 <div class="actions">
+
+                                    <div class="download">
+
+                                       <a class="download-button" href="register/regester.html">
+
+                                          
+
+                                          <span>Get Science cafe</span>
+
+                                       </a>
+
+                                    </div>
+
+                                 </div>
+
+                              </div>
+
+                           </div>
+
+                           <div class="screenshots">
+
+                              <div class="itc-slider" data-slider="itc-slider">
+
+                                 <div class="itc-slider__wrapper">
+
+                                   <div class="itc-slider__items">
+
+                                     <div class="itc-slider__item itc-slider__item_active">
+
+                                       <div class="modal-dodal">
+
+                                          <p class="modal-title">Adobe</p>
+
+                                          <div class="modal-folders">
+
+                                             <div class="header">
+
+                                                <video  autoplay loop class="back-video" muted plays-imline>
+
+                                                  <source src="pic/trading.mp4"> 
+
+                                                </video>
+
+                                             </div>
+
+                                           </div>
+
+                                          </div>
+
+                                     </div>
+
+                                   </div>
+
+                                 </div>
+
+                                 <button class="itc-slider__btn itc-slider__btn_prev"></button>
+
+                                 <button class="itc-slider__btn itc-slider__btn_next"></button>
+
+                                 <ol class="itc-slider__indicators">
+
+                                    <li class="itc-slider__indicator itc-slider__indicator_active" data-slide-to="0"></li>
+
+                                    <li class="itc-slider__indicator" data-slide-to="1"></li>
+
+                                    <li class="itc-slider__indicator" data-slide-to="2"></li>
+
+                                    <li class="itc-slider__indicator" data-slide-to="3"></li>
+
+                                  </ol>
+
+                               </div>
+
+                           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                       
+
+                        
+
+                        <div class="overlay js-overlay-modal"></div>
+
+                        <div class="scroll-down hide" style="bottom: 0px;">
+
+                           <img alt="" class="desktop" src="assets/scroll-down-8d9c7d4e8d.svg">
+
+                           <span>Scroll for more</span>
+
+                        </div>
+
+                     </div>
+
+                  </div>
+
+                  <footer class="top-footer">
+
+                     <div class="wrapper">
+
+                        <div><span>have suffered alteration in some form, by injected,  <em>randomised </em>or  humour
+
+                           </span>
+
+                        </div>
+
+                        <div>A personalized experience</div>
+
+                        <div>Get to work or have fun</div>
+
+                        <a target="_blank" rel="noopener"><span>Trustpilot: <em>19,779</em> reviews
+
+                        </span> <img alt="Five stars" src="assets/trustpilot-stars-24dbfb1cd9.svg"> <em class="rating">4.9/5</em></a>
+
+                     </div>
+
+                  </footer>
+
+               </section>
+
+                     <!---end of continer-->
+
+                     <!---about-->
+
+               <section class="section-creators-and-gamers">
+
+                  <div class="homepage-section-wrapper">
+
+                     <div class="layout">
+
+                        <h2>About Us</h2>
+
+                        <p>Science Caffee can provide students with many tools that help them focus on their educations.Science Caffee provide free Wifi access ,libraries and books.It is aim is to innovate and make students to explore about their talent, and make them competitive around the world </p>
+
+                        <div class="graphic">
+
+                           <div class="desktop-background">
+
+                              <img alt="WeMod creators sharing their mods with gamers." src="download.svg" width="1010" height="260">
+
+                           </div>
+
+                           <div class="mobile-background"></div>
+
+                           <div class="icon">
+
+                              <img alt="WeMod logo" src="l.svg" width="120" height="120">
+
+                           </div>
+
+                        </div>
+
+                     </div>
+
+                  </div>
+
+               </section>
+
+                  <!---end of about-->
+
+                  <!---services-->
+
+                <span id="how-it-works"></span>
+
+                <section class="section-how-it-works">
+
+                   <div class="homepage-section-wrapper">
+
+                      <h2 class="blue"><em>In one click</em></h2>
+
+                      <div class="layout">
+
+                         <div class="col">
+
+                            <div class="tile purple">
+
+                               <p>Welcome to learn any things frome this websiyt .</p>
+
+                               <div class="versions-wrapper scroll-percent" data-scroll-extra-area="75" data-scroll-percent="0" style="--scroll-percent:0%;">
+
+                                  <div class="versions desktop">
+
+                                     <div class="version" style="animation-delay: 0s;">v3.15</div>
+
+                                     <div class="version" style="animation-delay: 0s;">1.3.27 S5 GOLD-Public</div>
+
+                                     <div class="version" style="animation-delay: 0s;">v0.01-beta9</div>
+
+                                     <div class="version" style="animation-delay: 0s;">310.11</div>
+
+                                     <div class="version" style="animation-delay: 0s;">v2020.4.2.55755</div>
+
+                                     <div class="version" style="animation-delay: 0s;">v1.25.0.1</div>
+
+                                     <div class="version" style="animation-delay: 0s;">v1.1.25.5165</div>
+
+                                     <div class="version" style="animation-delay: 0s;">v1.4.4.37346</div>
+
+                                     <div class="version" style="animation-delay: 0s;">Build 402981</div>
+
+                                  </div>
+
+                                  <div class="versions mobile">
+
+                                     <div class="version" style="animation-delay: 0s;">v3.15</div>
+
+                                     <div class="version" style="animation-delay: 0s;">GOLD-Public</div>
+
+                                     <div class="version" style="animation-delay: 0s;">v0.01-beta9</div>
+
+                                     <div class="version" style="animation-delay: 0s;">310.11</div>
+
+                                     <div class="version" style="animation-delay: 0s;">20.4.2.55755</div>
+
+                                  </div>
+
+                                 
+
+                               </div>
+
+                               <div class="versions-button">
+
+                                  <a href="our class/class.html" data-app-download-button="">
+
+                                  <span>Click here</span>
+
+                                  <span>Get Our Classes</span>
+
+                                  </a>
+
+                               </div>
+
+                            </div>
+
+                         </div>
+
+                      </div>
+
+                </div></section>
+
+                <!---end of serv-->
+                <section class="section-games">
+                  <div class="homepage-section-wrapper">
+                     <h2 class="lime">Our Scientist<br><em></em></h2>
+                  </div>
+                  
+                  <div class="featured-thumbnails-wrapper visible-animation">
+                     <div class="featured-thumbnails" style="">
+                     <div class="featured-thumbnails-inner">
+                 <a title="sketch" href="#" style="background-image: url('10 science/1.jfif')"></a>
+                 <a title="sketchup" href="#" style="background-image: url('10 science/2.webp')"></a>
+                 <a title="ableton-live-11" href="#" style="background-image: url('10 science/3.jpg')"></a>
+                 <a title="office" href="#" style="background-image: url('10 science/4.jpg')"></a>
+                 <a title="adobe" href="#" style="background-image: url('10 science/5.webp')"></a>
+                 <a title="autocad" href="#" style="background-image: url('10 science/6.jpg')"></a>
+                 <a title="Proxifier" href="#" style="background-image: url('10 science/7.jpg')"></a>
+                 <a title="DaVinci_Resolve" href="#" style="background-image: url('10 science/9.jpeg')"></a>
+               </div>
+                     </div>
+                     
+                  </div>
+               </section>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+               
+
+
+
+                <section class="section-trustpilot">
+
+                   <div class="homepage-section-wrapper1">
+
+                      <h2 class="trustpilot">Why Choose Us <em>4.9<img src="assets/slash-f270ed7157.svg" alt="">5</em><br></h2>
+
+                      <div class="reviews">
+
+                         <div class="review tile fade">
+
+                            <h3>Breakfast with Coffee!</h3>
+
+                            <p>It's good that I found you. I don't 
+
+have any money left at all after the vacations, but I really want to 
+
+learn 3D design. I didn't even think the version would be complete and 
+
+completely free!</p>
+
+                            <div class="user">
+
+                               <a href="cafe/cafe.html"><span>Cafee</span></a>
+
+                               <img alt="Five stars" src="images/cho3.png">
+
+                            </div>
+
+                           
+
+                         </div>
+
+                         <div class="review tile fade">
+
+                            <h3>Free Internet Service.</h3>
+
+                            <p>All my friends already know, I won't stop talking about your app! SoftwareSelect you are my favorites:)</p>
+
+                            <div class="user">
+
+                               <a href="get wache vido/wache,video.html"><span>digital libarary</span></a>
+
+                               <img alt="Five stars" src="images/cho2.png">
+
+                            </div>
+
+                         </div>
+
+                         <div class="review tile fade">
+
+                            <h3>Many Books for Reading!?</h3>
+
+                            <p>Please tell me your payment details, I 
+
+have already saved over $1000 with your programs. But seriously, I'm 
+
+willing to pay you, just don't quit what you're doing!!!</p>
+
+                            <div class="user">
+
+                              <a href="icii layerey 2/libarary.1.2.html" ><span>Books</span></a>
+
+                               <img alt="Five stars" src="images/cho1.png">
+
+                            </div>
+
+                         </div>
+
+                      </div>
+
+                   </div>
+
+                </section>
+
+                <section class="section-faq">
+
+                   <div class="homepage-section-wrapper">
+
+                      <h2 class="blue"><em>Testimonails</em></h2>
+
+                      <div class="faq-items">
+
+                         <div class="row">
+
+                            <div class="item tile fade">
+
+                               <h3>
+
+                                 Dirriba Birra
+
+                                 Science Cafe Manager?</h3>
+
+                               <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+
+so why not share them.</p>
+
+                               <div class="icon-footer">
+
+                                  <img alt="" src="images/icon.png">
+
+                               </div>
+
+                            </div>
+
+                            <div class="item tile fade">
+
+                               <h3>Musa
+
+                                 Digital Manager?</h3>
+
+                               <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+                            </div>
+
+                         </div>
+
+                         <div class="row">
+
+                            <div class="item tile fade">
+
+                               <h3>Keneni
+
+                                 Digital Manager?</h3>
+
+                               <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum?</p>
+
+                            </div>
+
+                         </div>
+
+                      </div>
+
+                   </div>
+
+                </section>
+
+             </section>
+
+             <section class="bg-contact bg-section" id="contact">
+               <div class="container-fluid">
+                   <h1 class="container-h1">Contact us</h1>
+                   <div class="row slideanim slide">
+                       <div class="col-md-6 col-sm-6 contact-left">
+                           <div class="left-box">
+                               <address class="contact">
+                                   <span class="span-contact">Call:</span>
+                                   <br>
+                                   +2572670362
+                                   <br> 
+                                   <span class="span-contact">Email:</span> 
+                                   <br>
+                                   falmataaidris600@gmail.com
+                                   <br>
+                                   <span class="span-contact">Visit:</span>  
+                                   <br>
+                                   Afrikaans
+                                   <br>
+                                   Ethiopia
+                                   <br>
+                                   Balee Roobe
+                               </address>
+                           </div>
+                       </div>
+       
+                       <div class="col-md-6 col-sm-6 contact-right">
+                                   
+                                   <form novalidate="" action="mailto:falmataaidris600@gmail.com" name="frm" method="post">
+                                        <div class="form-group has-feedback">
+                                           <label class="sr-only">First name:</label>
+                                           <input type="text" name="name" class="form-control" placeholder="First name" required="">
+                                           
+                                       </div>
+                                        <div class="form-group has-feedback">
+                                           <label class="sr-only">Last name:</label>
+                                           <input type="text" name="surname" class="form-control" placeholder="Last name" required="">
+                                           
+                                       </div>
+                                       <div class="form-group has-feedback">
+                                           <label class="sr-only">Email:</label>
+                                           <input type="email" name="email" class="form-control" placeholder="Email" required="">
+                                           
+                                       </div>
+                                       <div class="form-group">
+                                           <label class="sr-only" name="comment" for="comment">Comment:</label>
+                                           <textarea class="form-control" rows="5" id="comment" placeholder="Description"></textarea>
+                                       </div>
+                                       <div class="contact-buttons pull-left">
+                                           <input type="submit" name="submit" value="Send">
+                                           <input type="reset" value="Reset">
+                                       </div>
+                                   </form>
+                                   
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div id="googleMap" style="height:300px;width:100%;"></div>
+       
+                       <!-- Add Google Maps -->
+                       <script src="http://maps.googleapis.com/maps/api/js"></script>
+                       <script>
+                       var myCenter = new google.maps.LatLng(-37.817110, 144.959128);
+       
+                       function initialize() {
+                       var mapProp = {
+                         center:myCenter,
+                         zoom:12,
+                         scrollwheel:false,
+                         draggable:false,
+                         mapTypeId:google.maps.MapTypeId.ROADMAP
+                         };
+       
+                       var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+       
+                       var marker = new google.maps.Marker({
+                         position:myCenter,
+                         });
+       
+                       marker.setMap(map);
+                       }
+       
+                       google.maps.event.addDomListener(window, 'load', initialize);
+                       </script>
+                   </div>
+               </div>    
+           </section>
+
+   
+
+          </div>
+
+       </div>
+
+       <div class="app-footer">
+
+          <div class="app-footer-wrapper">
+
+             <nav class="links ">
+
+                <a href="/terms.html">Terms and Conditions</a>
+
+                <a href="/privacy.html">Privacy Policy</a>
+
+                
+
+             </nav>
+
+            
+
+          </div>
+
+          <div class="cookie-policy show">
+
+             <div class="message">
+
+if you want to contact with <a href="">Falmataa</a> and <a href="">ather</a>.
+
+             </div>
+
+             <button class="close-button" onclick="app.agreeToCookiePolicy()"><a href="falmataa/chat.py/ChatBot-Starter-main/templates/chat.html"> Got it </a></button>
+
+          </div>
+
+       </div>
+
+    </div>
+
+    
+
+ 
+
+
+
+    <script src="assets/app-awd.js"></script>
+
+    <script>
+
+       var homepage = new Homepage();
+
+     </script>
+
+    <script>
+
+       function myFunction() {
+
+           document.getElementById("myDropdown").classList.toggle("show");
+
+       }
+
+
+
+       window.onclick = function(event) {
+
+         if (!event.target.matches('.dropbtn')) {
+
+       
+
+           var dropdowns = document.getElementsByClassName("dropdown-content");
+
+           var i;
+
+           for (i = 0; i < dropdowns.length; i++) {
+
+             var openDropdown = dropdowns[i];
+
+             if (openDropdown.classList.contains('show')) {
+
+               openDropdown.classList.remove('show');
+
+             }
+
+           }
+
+         }
+
+       }
+
+       
+
+       </script>
+
+       <!------Javascript for Toggle Menu------->  
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+
+
+    function showMenu(){
+
+      navLinks.style.right = "0"
+
+    }
+
+    function hideMenu(){
+
+      navLinks.style.right = "-200px"
+
+    }
+
+</script>
+
+       <script src="https://unpkg.com/scrollreveal"></script>
+
+             <script src="assets/slider.js"></script></body>
+
+</html>
